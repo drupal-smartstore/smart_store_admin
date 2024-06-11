@@ -22,3 +22,15 @@ a.ttn-logo{
   text-indent: -9999px;
 
 }
+.page-title{
+  color:#d71b7f;
+}
+
+h2.heading-a{
+  color:#d71b7f;
+}
+
+.install-page input{
+  background: #d71b7f;
+  color: #fff ;
+}

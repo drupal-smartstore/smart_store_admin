@@ -1,0 +1,8 @@
+{
+    "name": "smartstore/smart_store_admin",
+    "type": "drupal-theme",
+    "description": "Admin theme based on Claro",
+    "license": "GPL-2.0-or-later",
+    "minimum-stability": "dev",
+    "require": {}
+}

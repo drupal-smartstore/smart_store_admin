@@ -2,3 +2,6 @@ name: 'Smart store Admin'
 type: theme
 base theme: claro
 description: 'Admin theme based on Claro used for Smart store project.'
+core_version_requirement: ^10
+libraries:
+  - smart_store_admin/global-styling

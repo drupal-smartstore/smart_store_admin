@@ -1,0 +1,24 @@
+
+
+body.install-page {
+    /* background: #d71b7f; */
+    background: rgb(215,27,127);
+    background: -moz-linear-gradient(90deg, rgba(215,27,127,1) 0%, rgba(131,58,180,1) 50%, rgba(51,122,183,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(215,27,127,1) 0%, rgba(131,58,180,1) 50%, rgba(51,122,183,1) 100%);
+    background: linear-gradient(90deg, rgba(215,27,127,1) 0%, rgba(131,58,180,1) 50%, rgba(51,122,183,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d71b7f",endColorstr="#337ab7",GradientType=1);
+}
+
+a.ttn-logo{
+
+  position: absolute;
+  bottom: 90px;
+  left: 45%;
+  display: block;
+  width: 130px;
+  height: 67px;
+  display: block;
+  background: url(../svg/TTN-logo.svg) no-repeat 0 0;
+  text-indent: -9999px;
+
+}

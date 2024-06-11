@@ -1,0 +1,4 @@
+name: 'Smart store Admin'
+type: theme
+base theme: claro
+description: 'Admin theme based on Claro used for Smart store project.'

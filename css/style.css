@@ -30,7 +30,7 @@ h2.heading-a{
   color:#d71b7f;
 }
 
-.install-page input{
+.install-page input[type=button], input[type=submit], input[type=reset] {
   background: #d71b7f;
   color: #fff ;
 }

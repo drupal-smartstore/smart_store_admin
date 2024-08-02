@@ -5,3 +5,15 @@ description: 'Admin theme based on Claro used for Smart store project.'
 core_version_requirement: ^10
 libraries:
   - smart_store_admin/global-styling
+
+regions:
+  top_nav: Top Nav
+  header: Header
+  pre_content: Pre-content
+  breadcrumb: Breadcrumb
+  highlighted: Highlighted
+  help: Help
+  content: Content
+  page_top: Page top
+  page_bottom: Page bottom
+  sidebar_first: First sidebar

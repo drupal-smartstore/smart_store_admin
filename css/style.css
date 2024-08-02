@@ -1,36 +1,23 @@
-
-
 body.install-page {
-    /* background: #d71b7f; */
-    background: rgb(215,27,127);
-    background: -moz-linear-gradient(90deg, rgba(215,27,127,1) 0%, rgba(131,58,180,1) 50%, rgba(51,122,183,1) 100%);
-    background: -webkit-linear-gradient(90deg, rgba(215,27,127,1) 0%, rgba(131,58,180,1) 50%, rgba(51,122,183,1) 100%);
-    background: linear-gradient(90deg, rgba(215,27,127,1) 0%, rgba(131,58,180,1) 50%, rgba(51,122,183,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d71b7f",endColorstr="#337ab7",GradientType=1);
-}
+  background: linear-gradient(45deg, #d71b7f 0%, #833ab4 50%, #337ab7 100%); }
+  body.install-page .layout-container {
+    margin: 60px auto 40px !important; }
+    body.install-page .layout-container .page-title {
+      word-wrap: break-word;
+      color: #d71b7f;
+      font-size: 2.25rem;
+      margin-bottom: 1.5rem; }
+    body.install-page .layout-container main {
+      float: left;
+      clear: none;
+      box-sizing: border-box;
+      width: 65%;
+      padding-left: 3.85em; }
+      body.install-page .layout-container main .heading-a {
+        color: #3747b6; }
+  body.install-page .ttn-logo-wrapper {
+    text-align: center; }
+    body.install-page .ttn-logo-wrapper img {
+      max-width: 100px; }
 
-a.ttn-logo{
-
-  position: absolute;
-  bottom: 90px;
-  left: 45%;
-  display: block;
-  width: 130px;
-  height: 67px;
-  display: block;
-  background: url(../svg/TTN-logo.svg) no-repeat 0 0;
-  text-indent: -9999px;
-
-}
-.page-title{
-  color:#d71b7f;
-}
-
-h2.heading-a{
-  color:#d71b7f;
-}
-
-.install-page input[type=button], input[type=submit], input[type=reset] {
-  background: #d71b7f;
-  color: #fff ;
-}
+/*# sourceMappingURL=style.css.map */

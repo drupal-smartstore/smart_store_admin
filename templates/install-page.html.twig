@@ -48,11 +48,14 @@
     </footer>
   {% endif %}
 
-  {% block built_by %}
-    <a class="ttn-logo" href="https://www.tothenew.com/" title="TOTHENEW website">
-      {# <img width="300" height="73" src="{{ base_path ~ directory }}/svg/TTN-logo.svg" alt="ToTheNew" /> #}
-    </a>
-  {% endblock %}
+  
 
 </div>
+{% block built_by %}
+  <div class="ttn-logo-wrapper">
+    <a class="ttn-logo" href="https://www.tothenew.com/" title="TOTHENEW website">
+      <img  src="{{ base_path ~ directory }}/images/TTN-logo.png" alt="ToTheNew" />
+    </a>
+    </div>
+  {% endblock %}
 

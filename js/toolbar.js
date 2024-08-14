@@ -13,11 +13,11 @@
                   Drupal.toolbar.views.toolbarVisualView.model.set({locked: true, orientation: 'vertical'}, {validate: true, override: true});
                 }
               }
-              $('#block-smart-store-admin-darktheme button').on('click', function (){
+              $('#block-smart-store-admin-darktheme .moon').on('click', function (){
                 console.log('clicked');
                 $('body').addClass('dark-theme');
               });
-              $('#block-smart-store-admin-darktheme button').on('dblclick', function () {
+              $('#block-smart-store-admin-darktheme .moon').on('dblclick', function () {
                 console.log('double clicked');
                 $('body').removeClass('dark-theme');
               });

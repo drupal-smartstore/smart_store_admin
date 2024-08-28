@@ -11,14 +11,16 @@
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 8h12'/%3e%3cpath d='M8 2l2 2 -4 0 2 -2'/%3e%3cpath d='M8 14l2 -2 -4 0 2 2'/%3e%3c/svg%3e") !important;
 }
 .dark-theme .tabledrag-cell-content__item ,.dark-theme th,.dark-theme td,.dark-theme h1, .dark-theme h2,.dark-theme a {
-  color: #fff;
+  color: #94a3b8;
 }
-
 .dark-theme dd{
   color: #94a3b8;
 }
 .dark-theme .admin-item__link::before {
   background-image: url("data:image/svg+xml,%3csvg width='9' height='14' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1.71.314L.29 1.723l5.302 5.353L.289 12.43l1.422 1.408 6.697-6.762z' fill='white'/%3e%3c/svg%3e");
+}
+.dark-theme p{
+  color: #fff;
 }
 /* table css ends */
 .dark-theme .toolbar .toolbar-item:hover{
@@ -155,6 +157,19 @@
 .dark-theme .user-name{
   color: #94a3b8 !important;
 }
+/* dark-theme setting form  */
+.dark-theme .custom-form fieldset{
+  background: #fff;
+}
+.dark-theme .custom-form .fieldset__label--group {
+  color: #94a3b8;
+}
+.dark-theme .custom-form label {
+  color: #575864 !important;
+}
+.dark-theme .custom-form .form-boolean-group :not(.active) {
+  background-color: #F0F5F9 !important;
+}
 /* dark-theme breadcrumb */
 .dark-theme .breadcrumb__item + .breadcrumb__item::before {
   content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' height='8' width='5'%3e%3cpath fill='grey' d='M1.207.647L.5 1.354 3.146 4 .5 6.647l.707.707L4.561 4z'/%3e%3c/svg%3e");
@@ -163,8 +178,6 @@
 .dark-theme .breadcrumb a {
   color: #fff;
 }
-/* dark-theme breadcrumb css ends */
-
 /* color for copyright section */
 .dark-theme .copyright-text{
   color: #fff;
@@ -181,9 +194,14 @@
   border: 0.0625rem solid #94a3b8 ;
 }
 /* dark theme css ends */
-
-
+#block-smart-store-admin-tabs{
+  margin-top: 30px;
+}
 .content-header{
+  position: sticky;
+  top: 0;
+  z-index: 9999999;
+  margin-bottom: unset;
   padding: 0;
 }
 .layout-container{
@@ -208,7 +226,15 @@ header .layout-container{
 .content-header {
   background-color: unset;
 }
+/* basic css */
+h1{
+  font-size: 23px !important;
+}
+h2,h3{
+  font-size: 20px !important;
+}
 /*region css */
+
 .region-top-nav{
   float: right;
   padding-top: 20px;
@@ -216,19 +242,19 @@ header .layout-container{
   display: flex;
 }
 .region-breadcrumb{
+  padding-top: 30px;
   float: right;
+  /* clear: both; */
+}
+.region-header{
+  padding-top: 30px;
+  display: flex;
 }
 .region-content{
   min-height: 600px;
 }
 .breadcrumb a{
   color: #575864;
-}
-.region-top-nav{
-  padding-top: 20px;
-  margin-left: 930px;
-  height: 60px;
-  display: flex;
 }
 .box{
   margin-right: 30px;
@@ -284,7 +310,7 @@ header .layout-container{
 }
 /* table and view css */
 .views-bulk-actions{
- background: #2275fc;
+ background: #466eae;
 }
 .views-form{
   border: 1px solid #dedfe4;
@@ -294,7 +320,10 @@ header .layout-container{
 }
 .views-exposed-form{
   border-radius: 12px !important;
-  border-bottom: 0.0625rem solid #94a3b8 !important;
+  /* border-bottom: 0.0625rem solid #94a3b8 !important; */
+}
+.views-exposed-form label{
+  font-size: 14px !important;
 }
 
 .views-field{
@@ -340,10 +369,6 @@ header .layout-container{
     transform: rotate(45deg);
 }
 /* manage tab css */
-
-/* .toolbar-tab .toolbar-icon-menu{
-  display: none !important;
-} */
 
 .toolbar .toolbar-bar {
   box-shadow: unset;
@@ -502,9 +527,13 @@ header .layout-container{
 }
 
 .toolbar .toolbar-bar .toolbar-tab > .toolbar-item.is-active {
-  width: 239px;
+  width: 240px;
 }
 
+.toolbar .toolbar-tray-vertical .toolbar-menu ul ul {
+  border-top: unset !important;
+  border-bottom: unset !important;
+}
 .user{
   cursor: pointer;
   margin-top: -5px;
@@ -567,7 +596,7 @@ header .layout-container{
 .views-field-operations .dropbutton--multiple .dropbutton-toggle{
   display: none;
 }
-.views-field-operations .dropbutton:hover, .button--small:hover {
+.views-field-operations .dropbutton:hover{
   background-color: #fff !important;
 }
 
@@ -697,12 +726,11 @@ header .layout-container{
 #block-smart-store-admin-customformblock.show {
   border-radius: 14px 0 0 14px;
   right: 0;
-  z-index: 9999;
+  z-index: 9999999;
   width: 530px;
   padding: 30px;
   background-color: #fff;
 }
-
 .custom-form .form-boolean-group{
   display: grid !important;
   gap: 10px;
@@ -805,21 +833,19 @@ header .layout-container{
 
 /* toolbar opacity when backround image is setting*/
 .img-1-background .toolbar-menu a,
-.img-1-background .toolbar-menu a,
 .img-2-background .toolbar-menu a,
 .img-3-background .toolbar-menu a,
 .img-4-background .toolbar-menu a,
 .img-5-background .toolbar-menu a{
-  color: #fff;
+  color: #fff !important;
 }
 .img-1-background .toolbar-menu a.active,
 .img-2-background .toolbar-menu a.active,
 .img-3-background .toolbar-menu a.active,
 .img-4-background .toolbar-menu a.active,
 .img-5-background .toolbar-menu a.active{
-  color: #fff;
+  color: #2275fc !important;
 }
-
   /* css for copyright-text */
 .copyright-text{
     margin-top: 60px;
@@ -874,7 +900,7 @@ header .layout-container{
   position: absolute;
   padding: 16px 13px;
   right: 112px;
-  top: 70px;
+  top: 80px;
   z-index: 999;
   background-color: #fff;
   border-radius: 14px;
@@ -896,4 +922,80 @@ header .layout-container{
 
 .toolbar .toolbar-tray-vertical .toolbar-menu ul ul {
   border-top: unset !important;
+}
+.toolbar .toolbar-tray-vertical .menu-item:last-child {
+  border-bottom: unset !important;
+}
+.img-1-background .toolbar-icon-system-admin-content::before,
+.img-2-background .toolbar-icon-system-admin-content::before,
+.img-3-background .toolbar-icon-system-admin-content::before,
+.img-4-background .toolbar-icon-system-admin-content::before,
+.img-5-background .toolbar-icon-system-admin-content::before {
+  filter: invert(100%) brightness(1000%);
+}
+.img-1-background .toolbar-bar .toolbar-icon-commerce-admin-commerce::before,
+.img-2-background .toolbar-bar .toolbar-icon-commerce-admin-commerce::before,
+.img-3-background .toolbar-bar .toolbar-icon-commerce-admin-commerce::before,
+.img-4-background .toolbar-bar .toolbar-icon-commerce-admin-commerce::before,
+.img-5-background .toolbar-bar .toolbar-icon-commerce-admin-commerce::before
+ {
+  filter: invert(100%) brightness(1000%);
+}
+.img-1-background .toolbar-bar .toolbar-icon-system-admin-structure::before,
+.img-2-background .toolbar-bar .toolbar-icon-system-admin-structure::before,
+.img-3-background .toolbar-bar .toolbar-icon-system-admin-structure::before,
+.img-4-background .toolbar-bar .toolbar-icon-system-admin-structure::before,
+.img-5-background .toolbar-bar .toolbar-icon-system-admin-structure::before{
+  filter: invert(100%) brightness(1000%);
+}
+.img-1-background .toolbar-icon-system-themes-page::before,
+.img-2-background .toolbar-icon-system-themes-page::before,
+.img-3-background .toolbar-icon-system-themes-page::before,
+.img-4-background .toolbar-icon-system-themes-page::before,
+.img-5-background .toolbar-icon-system-themes-page::before{
+  filter: invert(100%) brightness(1000%);
+}
+.img-1-background .toolbar-icon-system-modules-list::before,
+.img-2-background .toolbar-icon-system-modules-list::before,
+.img-3-background .toolbar-icon-system-modules-list::before,
+.img-4-background .toolbar-icon-system-modules-list::before,
+.img-5-background .toolbar-icon-system-modules-list::before {
+  filter: invert(100%) brightness(1000%);
+}
+.img-1-background .toolbar-icon-system-admin-config::before,
+.img-2-background .toolbar-icon-system-admin-config::before,
+.img-3-background .toolbar-icon-system-admin-config::before,
+.img-4-background .toolbar-icon-system-admin-config::before,
+.img-5-background .toolbar-icon-system-admin-config::before{
+  filter: invert(100%) brightness(1000%);
+}
+.img-1-background .toolbar-icon-entity-user-collection::before,
+.img-2-background .toolbar-icon-entity-user-collection::before,
+.img-3-background .toolbar-icon-entity-user-collection::before,
+.img-4-background .toolbar-icon-entity-user-collection::before,
+.img-5-background .toolbar-icon-entity-user-collection::before{
+
+  filter: invert(100%) brightness(1000%);
+}
+.img-1-background .toolbar-icon-system-admin-reports::before,
+.img-2-background .toolbar-icon-system-admin-reports::before,
+.img-3-background .toolbar-icon-system-admin-reports::before,
+.img-4-background .toolbar-icon-system-admin-reports::before,
+.img-5-background .toolbar-icon-system-admin-reports::before{
+
+  filter: invert(100%) brightness(1000%);
+}
+.img-1-background .toolbar-bar .toolbar-icon-help-main:before,
+.img-2-background .toolbar-bar .toolbar-icon-help-main:before,
+.img-3-background .toolbar-bar .toolbar-icon-help-main:before,
+.img-4-background .toolbar-bar .toolbar-icon-help-main:before,
+.img-5-background .toolbar-bar .toolbar-icon-help-main:before{
+  filter: invert(100%) brightness(1000%);
+}
+.img-1-background .toolbar .toolbar-icon.toolbar-handle::before,
+.img-2-background .toolbar .toolbar-icon.toolbar-handle::before,
+.img-3-background .toolbar .toolbar-icon.toolbar-handle::before,
+.img-4-background .toolbar .toolbar-icon.toolbar-handle::before,
+.img-5-background .toolbar .toolbar-icon.toolbar-handle::before{
+  filter: invert(100%) brightness(1000%);
 }

@@ -197,10 +197,14 @@
 #block-smart-store-admin-tabs{
   margin-top: 30px;
 }
+/* :not(.toolbar-tray-open) .content-header{
+  margin-left: 0;
+} */
 .content-header{
+  /* margin-left: 240px; */
   position: sticky;
   top: 0;
-  z-index: 9999999;
+  /* z-index: 999999; */
   margin-bottom: unset;
   padding: 0;
 }
@@ -212,7 +216,7 @@
 }
 
 .page-content{
-  padding-top: 20px;
+  margin-top: 0;
 }
 
 header .layout-container{
@@ -933,12 +937,14 @@ h2,h3{
 .img-5-background .toolbar-icon-system-admin-content::before {
   filter: invert(100%) brightness(1000%);
 }
+
 .img-1-background .toolbar-bar .toolbar-icon-commerce-admin-commerce::before,
 .img-2-background .toolbar-bar .toolbar-icon-commerce-admin-commerce::before,
 .img-3-background .toolbar-bar .toolbar-icon-commerce-admin-commerce::before,
 .img-4-background .toolbar-bar .toolbar-icon-commerce-admin-commerce::before,
 .img-5-background .toolbar-bar .toolbar-icon-commerce-admin-commerce::before
  {
+  background-image: url('data:image/svg+xml,%3Csvg xmlns%3D%22http%3A//www.w3.org/2000/svg%22 width%3D%2224%22 height%3D%2224%22 viewBox%3D%220%200%2024%2024%22 stroke-width%3D%222%22 stroke%3D%22white%22 fill%3D%22none%22 stroke-linecap%3D%22round%22 stroke-linejoin%3D%22round%22%3E%3Cpath stroke%3D%22none%22 d%3D%22M0%200h24v24H0z%22/%3E%3Ccircle cx%3D%229%22 cy%3D%2219%22 r%3D%222%22/%3E%3Ccircle cx%3D%2217%22 cy%3D%2219%22 r%3D%222%22/%3E%3Cpath d%3D%22M3%203h2l2%2012a3%203%200%20003%202h7a3%203%200%20003%20-2l1%20-7h-15.2%22/%3E%3C/svg%3E') !important;
   filter: invert(100%) brightness(1000%);
 }
 .img-1-background .toolbar-bar .toolbar-icon-system-admin-structure::before,

@@ -47,7 +47,11 @@
           const $toolbarLining = $(".toolbar-oriented .toolbar-tray-vertical > .toolbar-lining");
           const bgClasses = ["img-1-background", "img-2-background", "img-3-background", "img-4-background", "img-5-background"];
           $toolbarLining.removeClass(bgClasses.join(' ')).addClass(`img-${selectedValue.split('option')[1]}-background`);
-
+          if ($toolbarLining.hasClass(`img-${selectedValue.split('option')[1]}-background`)) {
+            $('body').addClass('background-img');
+          } else {
+            $('body').removeClass('background-img');
+          }
       }
 
       // Toggles the settings form visibility

@@ -170,6 +170,14 @@
   color: #fff !important;
 }
 
+.dark-theme .pager__link{
+  background-color: #1E293B;
+}
+
+.dark-theme .pager__link:hover{
+  color: #2275fc;
+}
+
 /* ckeditor */
 .dark-theme .ck.ck-editor__main>.ck-editor__editable {
   background: #1e293b;
@@ -284,6 +292,13 @@
   background: #0f172a;
 }
 
+.dark-theme .views-ui-dialog .scroll{
+  background-color: #0f172a;
+}
+.dark-theme .panel__title {
+  color: #fff;
+  background: #1E293B;
+}
 /* dark theme css ends */
 
 #block-smart-store-admin-tabs {
@@ -460,7 +475,10 @@ h2, h3 {
   background: #fff !important;
 }
 
-/* tool bar css */
+.pager__link.is-active, .pager__item--current {
+  background: #466eae !important;
+}
+/* toolbar css */
 #toolbar-item-administration-tray {
   padding: 0 12px;
 }
@@ -1078,7 +1096,7 @@ h2, h3 {
 }
 
 /* user tab menu dropdown css */
-.menu--account {
+.menu--user-account-menu-admin {
   display: none;
   position: absolute;
   padding: 16px 13px;
@@ -1090,7 +1108,7 @@ h2, h3 {
   box-shadow: 0px 4px 24px 2px rgba(20, 25, 38, 0.1);
 }
 
-.menu--account li {
+.menu--user-account-menu-admin li {
   list-style: none;
   margin-bottom: 5px;
 }
@@ -1105,12 +1123,13 @@ h2, h3 {
 
 } */
 
-.menu--account li a {
+
+.menu--user-account-menu-admin li a {
   color: #000;
   text-decoration: none;
 }
 
-.menu--account li a:hover {
+.menu--user-account-menu-admin li a:hover {
   color: #2275fc;
 }
 
@@ -1120,6 +1139,19 @@ h2, h3 {
 
 .toolbar .toolbar-tray-vertical .menu-item:last-child {
   border-bottom: unset !important;
+}
+
+.background-img .toolbar-icon-system-admin-content:hover::before,
+.background-img .toolbar-icon-commerce-admin-commerce:hover::before,
+.background-img .toolbar-icon-system-admin-structure:hover::before,
+.background-img .toolbar-icon-system-themes-page:hover::before,
+.background-img .toolbar-icon-system-modules-list:hover::before,
+.background-img .toolbar-icon-system-admin-config:hover::before,
+.background-img .toolbar-icon-entity-user-collection:hover::before,
+.background-img .toolbar-icon-system-admin-reports:hover::before,
+.background-img .toolbar-icon-help-main:hover::before{
+  filter: invert(43%) sepia(84%) saturate(748%) hue-rotate(183deg) brightness(96%) contrast(94%);
+  transition: all 0.3s ease;
 }
 
 .background-img .toolbar-icon-system-admin-content::before,
@@ -1164,3 +1196,10 @@ h2, h3 {
   text-decoration: none;
   color: #2275fc !important;
 }
+
+/* pager css */
+.pager__item-title--forward, .pager__item-title--backwards {
+  font-size: 14px;
+}
+
+

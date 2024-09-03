@@ -32,7 +32,7 @@
       // Toggles the Profile menu display
       function setupUserMenuToggle() {
         $('body #block-smart-store-admin-views-block-user-block-1 .user').off('click').on('click', function () {
-          $('.menu--account').toggleClass('show');
+          $('.menu--user-account-menu-admin').toggleClass('show');
         });
       }
 

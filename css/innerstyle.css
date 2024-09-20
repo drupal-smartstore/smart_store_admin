@@ -946,12 +946,6 @@ h2, h3 {
   left: 268.25px !important;
 }
 
-
-/* product detail page */
-.layout-product-form .entity-meta {
-  display: none;
-}
-
 .product-wrapper {
   display: flex;
 }

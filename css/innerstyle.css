@@ -1196,4 +1196,33 @@ h2, h3 {
   font-size: 14px;
 }
 
+.custom-btn{
+  margin: 49px 0 0 460px;
+}
+
+.custom-link-product{
+  margin: 49px 0 0 660px;
+
+}
+
+.custom-btn a:hover{
+  background-color: #2275fc !important;
+  color: #fff !important;
+}
+
+.custom-btn a{
+color: #2275fc;
+background-color: #fff;
+border: 1px solid #2275fc;
+border-radius: 12px;
+padding: 15px 20px;
+box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+font-weight: 700;
+text-decoration: none;
+}
+
+.view-id-content .custom-link-product {
+  display: none;
+}
+
 

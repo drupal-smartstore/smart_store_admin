@@ -1,0 +1,26 @@
+<?php
+
+/**
+ * Implements hook_form_alter().
+ */
+function smart_store_admin_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  $absolute_base_url = Url::fromRoute('<front>')->setAbsolute()->toString();
+  if ($form_id == 'views_exposed_form') {
+    $add_content_url = $absolute_base_url . '/node/add';
+    $add_product_url = $absolute_base_url . '/product/add';
+    $form['custom_link_content_markup'] = [
+      '#type' => 'markup',
+      '#markup' => '<a  href="' . $add_content_url . '" target="_blank" class="custom-link-class">+ Add content</a>',
+      '#prefix' => '<div class="custom-btn custom-link-content">',
+      '#suffix' => '</div>',
+      '#weight' => '100',
+    ];
+    $form['custom_link_product_markup'] = [
+      '#type' => 'markup',
+      '#markup' => '<a href="' . $add_product_url . '" target="_blank" class="custom-link-class">+ Add product</a>',
+      '#prefix' => '<div class="custom-btn custom-link-product">',
+      '#suffix' => '</div>',
+      '#weight' => '100',
+    ];
+  }
+}

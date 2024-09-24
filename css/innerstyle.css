@@ -1202,7 +1202,6 @@ h2, h3 {
 
 .custom-link-product{
   margin: 49px 0 0 660px;
-
 }
 
 .custom-btn a:hover{
@@ -1225,4 +1224,6 @@ text-decoration: none;
   display: none;
 }
 
-
+.view-commerce-products .custom-link-content{
+  display: none;
+}

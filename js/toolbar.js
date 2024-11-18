@@ -8,7 +8,7 @@
     // Check if toolbar_always_vertical is defined in drupalSettings
     if (drupalSettings.toolbar_always_vertical && drupalSettings.toolbar_always_vertical.ss_theme_setting) {
       const ssThemeSetting = drupalSettings.toolbar_always_vertical.ss_theme_setting;
-      var bgImg = ssThemeSetting.bg_image;
+      var bgImg = ssThemeSetting.settings.bg_image;  
       setupBackgroundImageSwitcher(bgImg);
       Drupal.behaviors.toolbarOrientation.processed = true;
     }

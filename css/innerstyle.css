@@ -241,6 +241,10 @@
   color: #000;
 }
 
+.dark-theme .claro-details__summary{
+  background-color: #1E293B;
+}
+
 .dark-theme .claro-details__summary:hover {
   background-color: #0f172a;
 }

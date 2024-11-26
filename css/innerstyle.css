@@ -137,9 +137,9 @@
   background-color: #1E293B;
 }
 
-.dark-theme .views-form {
+/* .dark-theme .views-form {
   border: 1px solid #94a3b8 !important;
-}
+} */
 
 .dark-theme .toolbar-box a, .dark-theme .toolbar-menu .toolbar-box a {
   color: #fff;
@@ -298,6 +298,44 @@
 .dark-theme .panel__title {
   color: #fff;
   background: #1E293B;
+}
+.dark-theme .views-element-container{
+  border: 1px solid #94a3b8 !important;
+  border-radius: 10px;
+  box-shadow: var(--details-box-shadow);
+}
+
+.dark-theme .view-id-content .views-exposed-form.views-exposed-form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-block: none;
+  padding: var(--space-xs) var(--space-l) var(--space-l) var(--space-l);
+  border: none;
+  border-radius: var(--details-border-size-radius);
+  background-color: var(--color-white);
+  box-shadow: unset !important;
+}
+
+
+.dark-theme .view-id-content .views-form {
+  border: unset;
+  border-radius: unset;
+  box-shadow: unset;
+}
+
+.dark-theme .view-commerce-products .views-exposed-form.views-exposed-form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-block: unset;
+  padding: var(--space-xs) var(--space-l) var(--space-l) var(--space-l);
+  border: none;
+  border-radius: var(--details-border-size-radius);
+  background-color: var(--color-white);
+  box-shadow: unset !important;
+}
+
+.dark-theme table {
+  margin-block: unset;
 }
 /* dark theme css ends */
 
@@ -1218,5 +1256,46 @@ padding: 15px 20px;
 box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
 font-weight: 700;
 text-decoration: none;
+}
+
+.view-id-content, .view-commerce-products{
+  border-radius: var(--details-border-size-radius);
+  box-shadow: var(--details-box-shadow);
+}
+
+.view-id-content .views-exposed-form.views-exposed-form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-block: unset;
+  padding: var(--space-xs) var(--space-l) var(--space-l) var(--space-l);
+  border: none;
+  border-radius: var(--details-border-size-radius);
+  background-color: var(--color-white);
+  box-shadow: unset !important;
+}
+
+
+.view-id-content .views-form {
+  border: unset;
+  border-radius: unset;
+  box-shadow: unset;
+}
+
+.view-commerce-products .views-exposed-form.views-exposed-form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-block: unset;
+  padding: var(--space-xs) var(--space-l) var(--space-l) var(--space-l);
+  border: none;
+  border-radius: var(--details-border-size-radius);
+  background-color: var(--color-white);
+  box-shadow: unset !important;
+}
+
+
+.view-commerce-products .views-form {
+  border: unset;
+  border-radius: unset;
+  box-shadow: unset;
 }
 

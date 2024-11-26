@@ -300,7 +300,6 @@
   background: #1E293B;
 }
 .dark-theme .views-element-container{
-  border: 1px solid #94a3b8 !important;
   border-radius: 10px;
   box-shadow: var(--details-box-shadow);
 }
@@ -354,7 +353,19 @@
   filter: invert(100%) brightness(1000%);
 }
 
+/* add product and content css */
+.dark-theme .entity-meta__header{
+  background-color: #1E293B;
+}
 
+.dark-theme .entity-meta__header h4,.dark-theme .entity-meta__header h3,.dark-theme .entity-meta__header .form-item--no-label{
+  color: #fff;
+}
+
+.dark-theme .layout-form, .dark-theme .layout-product-form{
+  background: #1E293B;
+  border: var(--details-border-size) solid var(--details-border-color);
+}
 /* dark theme css ends */
 
 #block-smart-store-admin-tabs {
@@ -1352,10 +1363,22 @@ text-decoration: none;
   box-shadow: unset !important;
 }
 
-
 .view-commerce-products .views-form {
   border: unset;
   border-radius: unset;
   box-shadow: unset;
 }
 
+.layout-form, .layout-product-form{
+  display: block !important;
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 24px 2px rgba(20, 25, 38, 0.05);
+}
+
+.layout-region--main, .layout-region--footer {
+  grid-column: 1;
+  margin-inline: unset;
+  width: unset;
+}

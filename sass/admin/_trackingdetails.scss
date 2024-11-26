@@ -1,0 +1,33 @@
+.record-sec1, .record-sec3 {
+  display: grid;
+  gap: 30px 20px;
+}
+.record-sec1{
+grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.record-sec3{
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.record-sec2{
+  display: flex;
+  gap: 20px;
+}
+.record-sec2 img, .record-sec2 .field, .record-sec3 img, .record-sec3 .field{
+  height: 100%;
+}
+.record-sec1 .total-sales span{
+font-size: 14px;
+display: block;
+}
+.record-sec1 .icon-sales-wrapper .icon + div {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.record-sec1 .apexcharts-canvas, .record-sec1 .apexcharts-canvas svg {
+  height: 70px !important;
+  padding-left: 6px;
+}
+.mb-30{
+  margin-bottom: 30px;
+}

@@ -1356,6 +1356,10 @@ text-decoration: none;
   box-shadow: unset;
 }
 
+.view-id-content .bef-exposed-form .js-form-item{
+  margin-top: 38px !important;
+}
+
 .view-commerce-products .views-exposed-form.views-exposed-form {
   display: flex;
   flex-wrap: wrap;

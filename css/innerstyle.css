@@ -1446,6 +1446,11 @@ h2, h3 {
     display: flex;
     justify-content: space-between;
     gap: 30px;
+    align-items: center;
+
+    .percentage-change.increase {
+      padding-left: 38px;
+    }
   }
 }
 
@@ -1455,11 +1460,12 @@ h2, h3 {
   gap: 10px;
   padding-left: 4px;
 }
-.total-sales{
+
+.total-sales {
   display: flex;
   align-items: center;
   padding-left: 4px;
-  gap:40px;
+  gap: 40px;
 }
 
 .total-sales, .total-revenue, .total-orders, .total-users {
@@ -1485,7 +1491,7 @@ h2, h3 {
   align-items: center;
   margin-bottom: 10px;
   font-weight: 700;
-  padding-left: 63px;
+  padding-left: 58px;
 
 }
 
@@ -1513,20 +1519,39 @@ h2, h3 {
 .apexcharts-toolbar {
   display: none !important;
 }
-#sales-chart-block, #income-chart-block, #orders-paid-chart-block, #visitor-chart-block{
+
+#sales-chart-block, #income-chart-block, #orders-paid-chart-block, #visitor-chart-block {
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
   background: #fff;
-  border-radius:18px;
+  border-radius: 18px;
   overflow: hidden;
 
 }
+
 #earnings-block {
   background: #fff;
-  border-radius:8px;
+  border-radius: 8px;
   overflow: hidden;
 }
+
 #earnings-chart-container {
   .icon-sales-wrapper {
+    gap: 27px;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: start;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background: url("/themes/contrib/smart_store_admin/images/banner-right.svg") no-repeat center / cover;
+      width: 200px;
+      top: -38px;
+      height: 164px;
+      right: -41px;
+    }
+
     .icon {
       display: inline-block;
       width: 40px;
@@ -1535,8 +1560,216 @@ h2, h3 {
       background-size: contain;
     }
   }
-  .icon-sales-wrapper{
-    gap:27px;
-    justify-content: space-around;
+
+  .total-sales {
+    flex-direction: column;
+    align-items: start;
+    gap: 8px;
   }
+
+  #earnings-chart {
+    margin-top: 41px;
+  }
+}
+
+#product-overview-block {
+  width: 60%;
+  padding: 10px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 4px 24px 2px rgba(20, 25, 38, 0.05);
+  height: 690px;
+  position: relative;
+
+  h2 {
+    color: #575864;
+  }
+
+  table {
+    margin-top: 0;
+
+    th {
+      background-color: unset !important;
+    }
+
+    thead tr:hover {
+      background-color: unset !important;
+    }
+
+    th, tr {
+      .views-field-field-image {
+        text-align: center;
+      }
+    }
+  }
+
+  .contextual-region {
+    position: unset;
+  }
+
+  .pager {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    left: 0%;
+    bottom: -2%;
+  }
+
+}
+
+#earnings-block {
+  width: 40%;
+  padding: 30px 10px 10px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 4px 24px 2px rgba(20, 25, 38, 0.05);
+
+}
+
+#product-overview-block .view-content {
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+#product-overview-block table.views-table {
+  min-width: 500px;
+  width: max-content;
+  border-collapse: collapse;
+}
+
+#product-overview-block .view-content::-webkit-scrollbar {
+  height: 8px;
+  /* horizontal scrollbar height */
+}
+
+#product-overview-block .view-content::-webkit-scrollbar-track {
+  background: #f1f3f6;
+  border-radius: 10px;
+}
+
+#product-overview-block .view-content::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, #3C7ABD, #ED0082);
+  border-radius: 10px;
+}
+
+#orders-block {
+  width: 60%;
+  padding: 10px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 4px 24px 2px rgba(20, 25, 38, 0.05);
+  min-width: 0;
+
+  h2 {
+    color: #575864;
+  }
+
+  table {
+    margin-top: 0;
+
+    th {
+      background-color: unset !important;
+    }
+
+    thead tr:hover {
+      background-color: unset !important;
+    }
+    th, tr {
+      .views-field-field-image {
+        text-align: center;
+      }
+    }
+  }
+}
+
+#top-products-block {
+  width: 40%;
+  padding: 10px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 4px 24px 2px rgba(20, 25, 38, 0.05);
+  min-width: 0;
+
+  h2 {
+    color: #575864;
+  }
+
+  table {
+    margin-top: 0;
+
+    th {
+      background-color: unset !important;
+    }
+
+    thead tr:hover {
+      background-color: unset !important;
+    }
+    th, tr {
+      .views-field-field-image {
+        text-align: center;
+      }
+    }
+  }
+}
+
+.record-sec3 {
+  display: flex;
+  gap: 20px;
+}
+
+
+#top-products-block .view-content {
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+#top-products-block table.views-table {
+  min-width: 300px;
+  width: max-content;
+  border-collapse: collapse;
+}
+
+#top-products-block .view-content::-webkit-scrollbar, #orders-block .view-content::-webkit-scrollbar {
+  height: 8px;
+  width: 20px;
+
+}
+
+#top-products-block .view-content::-webkit-scrollbar-track, #orders-block .view-content::-webkit-scrollbar-track {
+  background: #f1f3f6;
+  border-radius: 10px;
+  width: 20px;
+}
+
+#top-products-block .view-content::-webkit-scrollbar-thumb, #orders-block .view-content::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, #3C7ABD, #ED0082);
+  border-radius: 10px;
+}
+
+#orders-block .view-content {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+#orders-block table {
+  /* min-width: 700px; */
+  width: max-content;
+}
+
+#orders-block td.views-field.views-field-product-id, #orders-block td.views-field.views-field-title, #top-products-block td.views-field.views-field-product-id {
+  max-width: 240px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#orders-block .view-content {
+  overflow-x: scroll;
+}
+
+#orders-block table {
+  /* min-width: 900px; */
 }

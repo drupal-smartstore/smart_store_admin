@@ -20,22 +20,23 @@ body.install-page {
     body.install-page .ttn-logo-wrapper img {
       max-width: 100px; }
 
-.record-sec1, .record-sec3 {
+.record-sec1 {
   display: grid;
   gap: 30px 20px; }
 
 .record-sec1 {
   grid-template-columns: repeat(4, minmax(0, 1fr)); }
 
-.record-sec3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr)); }
+/* .record-sec3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr)); } */
 
 .record-sec2 {
   display: flex;
   gap: 20px; }
 
 .record-sec2 img, .record-sec2 .field, .record-sec3 img, .record-sec3 .field {
-  height: 100%; }
+  height: 62px;
+  width: auto; }
 
 .record-sec1 .total-sales span {
   font-size: 14px;
